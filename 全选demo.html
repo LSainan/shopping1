@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全选</title>
+</head>
+
+<body>
+
+    <input type="checkbox" name="checkboxAll"><br>
+
+
+
+    <input type="checkbox" name="checkbox">
+    <input type="checkbox" name="checkbox">
+    <input type="checkbox" name="checkbox">
+    <input type="checkbox" name="checkbox">
+    <input type="checkbox" name="checkbox">
+</body>
+<script src="./plugin/jquery-1.11.3.js"></script>
+<script>
+    // q全选 全不选
+    $("input[name='checkboxAll']").click(function() {
+            var inputLen = $("input[name='checkbox']").length;
+            if ($(this)[0].checked) {
+                for (let i = 0; i < inputLen; i++) {
+                    $("input[name='checkbox']")[i].checked = true;
+                }
+
+            } else {
+                $('input[name="checkbox"]').each(function() {
+                    $(this).attr('checked', false)
+                })
+            }
+        })
+        //看是否全选
+    $("input[name='checkbox']").click(function() {
+        var checkLen = $("input[name='checkbox']:checked").length;
+        var inputLen = $("input[name='checkbox']").length;
+        if (checkLen === inputLen) {
+            $('input[name="checkboxAll"]')[0].checked = true
+        } else {
+            $('input[name="checkboxAll"]')[0].checked = false
+        }
+    })
+</script>
+
+</html>

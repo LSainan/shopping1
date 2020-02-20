@@ -1,0 +1,36 @@
+.shop-mes{
+    width: 1000px;
+    margin: 0 auto;
+}
+.shop-mes>ul{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.shop-mes>ul>li{
+float: left;
+margin-right: 150px;
+}
+.shop-mes>ul>li:nth-child(4){
+    float:right;
+    margin-right: 0;
+}
+.shop-mes>ul>li:nth-child(1){
+    margin-right:0;
+}
+.shop-mes>.mes>.list-info>p{
+
+}
+.shop-mes>.mes>.list-info>p:nth-child(3){
+    color: #999;
+    margin-top: 20px;
+}
+.shop-mes>.mes>.list-price>span:nth-child(2){
+    color: #999;
+    margin-left: 16px;
+}
+.shop-mes>ul>li>a>img{
+    width: 80px;
+    height: 106px;
+    margin-right: 10px;
+}
+/*  */

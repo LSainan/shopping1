@@ -1,0 +1,172 @@
+.cartContent{
+    overflow: hidden;
+}
+.cartContent>.settlement{
+    float: left;
+    width: 800px;
+    /* background-color: pink; */
+    padding: 0 12px;
+}
+.cartContent>.settlement>.set-message{
+    background-color: #f5f5f5;
+    font-size: 18px;
+    padding:10px;
+}
+.cartContent>.settlement>.emptyAddress{
+    padding-top: 20px;
+    /* background-color: red; */
+    padding-left: 12px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee{
+    overflow: hidden;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee>.sendee{
+    float: left;
+    margin-right: 15px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee>.sendee>p{
+    margin-bottom: 10px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee>.sendee>input{
+    padding: 5px;
+    width: 260px;
+}
+/* s手机号 */
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee>.add-phone>p{
+    margin-bottom: 10px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.addressee>.add-phone>input{
+    padding: 5px;
+    width: 260px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three{
+    overflow: hidden;
+    margin: 20px 0;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three>div{
+    float: left;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three>div>select{
+    width: 200px;
+    padding: 5px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three>.country{
+   margin-right: 10px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three p{
+    margin-bottom: 10px;
+ }
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.add-adress-three>.area{
+    margin-left: 10px;
+
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.address-detail>p{
+    margin-bottom: 8px;
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.address-detail>.de-textarea{
+
+}
+.cartContent>.settlement>.emptyAddress>.add-address>.form>.address-detail>.de-textarea>textarea{
+    padding: 10px;
+    width: 600px;
+ }
+ /* .cartContent>.settlement>.emptyAddress>.add-address>.form>.address-detail>.de-textarea>textarea:hover{
+     border-color: #122147;
+ } */
+ .cartContent>.settlement>.emptyAddress>.add-address>.form>.address-detail>.de-d{
+    color:red;
+    display: none;
+
+ }
+ .cartContent>.settlement>.emptyAddress>.add-address>.set-way{
+margin: 20px 0;
+ }
+ .cartContent>.settlement>.emptyAddress>.add-address>.set-way>.w-way{
+   margin-bottom: 10px;
+     }
+ .cartContent>.settlement>.emptyAddress>.add-address>.set-way>.w-type>span{
+    padding-right: 20px;
+     }
+     /* 商品信息 */
+     .cartContent>.settlement>.set-shopMes{
+         margin-bottom: 40px;
+         height: 270px;
+         overflow: scroll;
+
+     }
+     .cartContent .settlement .set-title{
+        background-color: #f5f5f5;
+        font-size: 18px;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>ul{
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>ul>li{
+    float: left;
+    margin-right: 150px;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>ul>li:nth-child(4){
+        float:right;
+        margin-right: 0;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>ul>li:nth-child(1){
+        margin-right:0;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>.mes>.list-info>p{
+
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>.mes>.list-info>p:nth-child(3){
+        color: #999;
+        margin-top: 20px;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>.mes>.list-price>span:nth-child(2){
+        color: #999;
+        margin-left: 16px;
+    }
+    .cartContent>.settlement>.set-shopMes>.shop-mes>ul>li>a>img{
+        width: 80px;
+        height: 106px;
+        margin-right: 10px;
+    }
+     /* 支付信息 */
+     .cartContent>.settlement>.set-payMes>.pay-way{
+         overflow: hidden;
+         padding: 20px 10px;
+     }
+     .cartContent>.settlement>.set-payMes>.pay-way>.way{
+         float: left;
+        width: 25%;
+        /* text-align: center; */
+     }
+     /* .cartContent>.settlement>.set-payMes>.pay-way>.way>.radio{
+        width: 16px;
+        height: 16px;
+    border: 1px solid #d9d9d9;
+     } */
+     .cartContent>.settlement>.set-payMes>.pay-way>.way:nth-child(4){
+        text-align: center;
+     }
+     .cartContent>.settlement>.set-payMes>.pay-way>.way>.color{
+         color: #999;
+         font-size: 12px;
+         line-height: 2;
+         margin-right: 10px;
+     }
+
+     /* 发票说明 */
+     .cartContent>.settlement>.set-payMes>.receipt{
+        margin-top:16px;
+     }
+     .cartContent>.settlement>button{
+         width: 300px;
+         height: 40px;
+         background-color: #122147;
+         font-size: 16px;
+         color: #fff;
+         text-align:center;
+         padding: 0px 24px;
+         margin-top: 56px;
+     }

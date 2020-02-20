@@ -1,0 +1,559 @@
+.bigB-c{
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.bigB-c .myAccount{
+    overflow: hidden;
+    /* margin-top: 30px; */
+    padding:32px 0 80px;
+}
+.myAccount>.myAccount-l{
+    float: left;
+    width: 231px;
+    background-color: #fff;
+    height: 450px;
+}
+.myAccount>.myAccount-r{
+    float: left;
+    margin-left: 24px;
+    width: 945px;
+    min-height: 450px;
+    background-color: #fff;
+
+}
+/* 左 */
+.myAccount>.myAccount-l>.memberOrder h4{
+    margin-bottom: 3px;
+    padding: 26px 0 10px 11px;
+    border-bottom: 2px solid #eee;
+}
+.myAccount>.myAccount-l>.memberOrder h4>i{
+    margin-right: 5px;
+}
+.myAccount>.myAccount-l>.memberOrder>ul{
+}
+.myAccount>.myAccount-l>.memberOrder  li{
+    cursor: pointer;
+    padding:8px 44px 8px 20px;
+    background-color: #fff;
+}
+.myAccount>.myAccount-l>.memberOrder  li:hover{
+    background-color: #f5f5f5;
+}
+.myAccount>.myAccount-l>.memberOrder>.member .on{
+    background-color: #f5f5f5;
+    font-weight: 600;
+    border-left: 4px solid #122147;
+}
+/* 右边 */
+.myAccount .myAccount-r .con-1 {
+    font-size: 13px;
+    display: none;
+}
+.myAccount .myAccount-r .active {
+    display: block;
+}
+/* 我的账户 */
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container{
+    overflow: hidden;
+    padding: 24px 25px 16px;
+    border-bottom: 10px solid #f5f5f5;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.welcome-info{
+    width: 363px;
+    display: inline-block;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.welcome-info>.userinfo{
+    color: #333;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.welcome-info>.userinfo>span{
+    color: #999;
+    float: right;
+    cursor: pointer;
+    font-weight: 400;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.welcome-info>.slogan{
+    color: #666;
+    font-weight: 400;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap{
+    float: right;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap .flipper,.front, .back{
+    width: 340px;
+    height: 200px;
+    border: 1px solid #eee;
+    border-radius: 13px;
+    position: relative;
+    text-align: center;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper{
+    transition: 2s;
+    transform-style: preserve-3d;
+    /* position: relative; */
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.face{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.front{
+    transform: rotateY(0deg);
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back{
+    transform: rotateY(180deg);
+}
+/* 旋转 */
+.flip{
+    transform: rotateY(180deg);
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back>.back-wrap{
+clear: both !important;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.face .wrap .backface>.img>img{
+   width: 340px;
+   height: 200px;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.face>.wrap>.backface>.signal{
+    width: 100%;
+    color: #042f6a;
+    line-height: 16px;
+    position: absolute;
+    top: 74%;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back>.wrap>.signal{
+    color: #042f6a;
+    padding-top: 10px;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.face>.wrap>.backface>.serial{
+    top: 87%;
+    left: 50%;
+    cursor: pointer;
+    line-height: 14px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back>.back-wrap>.backface>.signal{
+    width: 100%;
+    color: #042f6a;
+    position: absolute;
+    top: 5.7%;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back>.back-wrap>.memberId{
+    margin-top: 15px;
+}
+.myAccount .myAccount-r .con-1>.Ac-wrap >.info-container>.card-wrap>.flipper>.back>.back-wrap>.serial{
+    color: #999;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+/* member-info 蓝卡会员 */
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info{
+    width: 363px;
+    padding-top: 50px;
+    line-height: 14px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.hello{
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.benefit{
+    color: #666;
+    margin-bottom: 35px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.upgrade{
+    display: flex;
+    justify-content: space-between;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.upgrade>.grade{
+    font-weight: 700;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.upgrade>.grade-next{
+    color: #666;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.upgrade>.grade-next>.price{
+    color: #042f6a;
+    font-weight: 700;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.upgrade>.grade-next>.next-level{
+        color: #333;
+        margin-left: 1px;
+}
+/*  */
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.progress{
+    font-size: 0;
+    position: relative;
+    margin-bottom: 11px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.progress>.progress-bar{
+    height: 3px;
+    position: relative;
+    background: #e8e8e8;
+    /* width: calc(100% - 18px); */
+    margin: 40px 6px 25px 12px;
+}
+.myAccount .myAccount-r .con-1 >.Ac-wrap> .info-container>.member-info>.degree>.progress>.check-point>.icon{
+   font-size: 30px;
+   position: absolute;
+   top: -12px;
+}
+.Ac-wrap{
+    border-radius: 2px;
+}
+/* 个人信息 地址 积分 优惠券 */
+.Ac-wrap>.menu-container{
+    padding: 24px;
+    border-bottom: 10px solid #f5f5f5;
+}
+.Ac-wrap>.menu-container>ul{
+    display: flex;
+    /* font-size: 0; */
+}
+.Ac-wrap>.menu-container>ul>li{
+    width: 25%;
+}
+.Ac-wrap>.menu-container>ul>li>.iconbox{
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+    display: inline-block;
+
+}
+.Ac-wrap>.menu-container>ul>li>.iconbox>a>svg{
+    font-size: 40px;
+}
+.Ac-wrap>.menu-container>ul>li>.infobox{
+    padding-top: 7px;
+    padding-left: 16px;
+    vertical-align: top;
+    display: inline-block;
+}
+.Ac-wrap>.menu-container>ul>li>.infobox>.name{
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+.Ac-wrap>.menu-container>ul>li>.infobox>.info{
+  color: #666;
+}
+/*  */
+/* 地址簿 */
+.myAccount .myAccount-r .con-1>.title{
+    font-size: 18px;
+   padding-bottom: 16px;
+    background-color: #f5f5f5;
+}
+.myAccount .myAccount-r .con-1>table{
+    width: 100%;
+border: 0;
+}
+.myAccount .myAccount-r .con-1>table>thead{
+
+}
+.myAccount .myAccount-r .con-1>table>thead>tr>th{
+    padding: 15px 0;
+    font-weight: 500;
+    line-height: 14px;
+    border: 1px solid #fff;
+}
+.myAccount .myAccount-r .con-1>table>tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.myAccount .myAccount-r .con-1>table>tbody>tr{
+    /* display: table-row; */
+    /* vertical-align: inherit; */
+    font-size: 14px;
+}
+.myAccount .myAccount-r .con-1>table>tbody>tr>td{
+    padding:19px 10px;
+    line-height: 14px;
+    vertical-align: inherit;
+}
+.myAccount .myAccount-r .con-1>table>tbody>tr>td:nth-child(1){
+    padding-left: 16px;
+    padding-right: 52px;
+}
+.myAccount .myAccount-r .con-1>table>tbody .bg-c{
+    background-color: #f5f5f5;
+ }
+ /* 新增收获地址 */
+ .myAccount .myAccount-r .btn-box{
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+ }
+ .myAccount .myAccount-r .btn-box>button{
+border: 0;
+ }
+ .myAccount .myAccount-r .btn-box>button>span{
+     display: inline-block;
+     padding: 5px 60px;
+     background-color: #fff;
+     border:1px solid #122147;
+ }
+ /* =====================优惠券 */
+ /* ----------------------------优惠券弹出框样式 start*/
+ .coupon-dialog-wrapper{
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+ }
+ .coupon-dialog-wrapper>.dialog{
+    width: 560px;
+    /*  */
+    box-sizing:border-box;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -280px;
+    margin-top: -260px;
+position: relative;
+ }
+ .coupon-dialog-wrapper>.dialog>.dialog-title{
+     font-size: 18px;
+     font-weight: 500;
+     text-align: center;
+     line-height: 18px;
+     margin-bottom: 29px;
+
+ }
+ .coupon-dialog-wrapper>.dialog>.detail-item{
+     margin-bottom: 24px;
+     font-size: 12px;
+ }
+ .coupon-dialog-wrapper>.dialog>.detail-item>span:nth-child(1){
+
+color: #999;
+margin-right: 12px;
+ }
+ .coupon-dialog-wrapper>.dialog>.nseInfo{
+     float: left;
+ }
+ .coupon-dialog-wrapper>.dialog>.detail-item>p{
+     margin: -17px 0px 10px 60px;
+     line-height: 1.7;
+     display: right;
+ }
+ .coupon-dialog-wrapper>.dialog>span{
+     position: absolute;
+     top: 15px;
+     right: 20px;
+     font-size: 18px;
+     color: #999;
+     cursor: pointer;
+ }
+
+ /* ----------------------------优惠券弹出框样式  end*/
+
+ .coupon-dialog-wrapper>.dialog{}
+ /*  */
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container{
+     font-size: 14px;
+ }
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.use-box>.use-rule{
+    text-decoration: none;
+    float: right;
+    color: #000;
+ }
+ /* 已使用,无 */
+ .counpon-none{
+     display: none;
+     padding: 16px;
+ }
+ .coun-dis{
+     display: block !important;
+ }
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box{
+    padding: 20px 0 20px 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box>.coupon{
+    margin-right: 16px;
+    margin-bottom: 16px;
+ }
+
+
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box>.coupon>.coupon-item{
+    width: 293px;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+ }
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box>.coupon>.coupon-cash>.coupon-top{
+    background: #fd737a;
+ }
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box>.coupon>.coupon-item>.coupon-top{
+    border-bottom: 1px dashed #fff;
+    border-radius: 4px 4px 0 0;
+    padding: 12px;
+    position: relative;
+ }
+ .coupon-container>.coupon-box>.coupon>.coupon-item>.coupon-top>.price{
+    font-size: 18px;
+    color: #fff;
+    line-height: 14px;
+    margin-bottom: 12px;
+ }
+ .coupon-container>.coupon-box>.coupon>.coupon-item>.coupon-top>.price .price-num{
+    font-size: 36px;
+    line-height: 36px;
+ }
+ .coupon-container>.coupon-box>.coupon>.coupon-item>.coupon-top>.name{
+    color: #fff;
+    line-height: 14px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+ .coupon .coupon-item .coupon-top .dateline {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 12px;
+}
+.coupon .coupon-item .coupon-top .type {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    background: hsla(0,0%,100%,.95);
+    border-radius: 2px 0 0 2px;
+    padding: 6px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fd737a;
+}
+ .myAccount .myAccount-r>.memberCon>.con-1>.coupon-container>.coupon-box>.coupon>.coupon-item>.coupon-btm{
+    background: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+    padding: 12px;
+    position: relative;
+    height: 98px;
+
+ }
+ .coupon .coupon-item .coupon-top .isUsed {
+    display: none;
+    position: absolute;
+    right: 11px;
+    bottom: 12px;
+    line-height: 14px;
+}
+/* btm */
+/* desc time*/
+.coupon .coupon-item .coupon-btm>p{
+    font-size: 12px;
+    line-height: 18px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+.coupon .coupon-item .coupon-btm>p>span{
+    color: #999;
+}
+.coupon .coupon-item .coupon-btm .detail-btn{
+    display: block;
+    width: 86px;
+    height: 24px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    margin-left: -43px;
+}
+ .myAccount .myAccount-r .memberCon .con-1 .table-box>.tab-item{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing:border-box;
+    /* 设置百分比时 不让padding和border影响宽度 */
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+    padding: 0 16px;
+}
+.myAccount .myAccount-r .memberCon .con-1 .table-box{
+    overflow: hidden;
+}
+.myAccount .myAccount-r .memberCon .con-1 .table-box>div:nth-child(2){
+  float: right;
+}
+/* 我的退换货 */
+.myAccount .myAccount-r>.memberCon .con-1>.returnlist-container{
+    border-radius: 2px;
+    position: relative;
+}
+.myAccount .myAccount-r .memberCon .con-1  .table-box{
+    height: 40px;
+    background: #f5f5f5;
+}
+/* addclss isActive */
+.myAccount .myAccount-r .memberCon .con-1 .isActive{
+    background-color: #fff !important;
+}
+.myAccount .myAccount-r .memberCon .con-1 .table-box>span{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing:border-box;
+    /* 设置百分比时 不让padding和border影响宽度 */
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+    padding: 0 16px;
+}
+.myAccount .myAccount-r>.memberCon>.con-1 .use-box{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5px;
+    height: 22px;
+    padding: 20px 16px 0 ;
+}
+.myAccount .myAccount-r>.memberCon>.con-1 .use-box>.use-item{
+    display: inline-block;
+    margin-right: 52px;
+    cursor: pointer;
+    color: #999;
+}
+/* addclass b-c */
+.myAccount .myAccount-r>.memberCon>.con-1 .use-box .b-c{
+    border-bottom: 2px solid #122147;
+    color: #122147;
+    padding-bottom: 5px;
+}
+.myAccount .myAccount-r>.memberCon>.con-1>.returnlist-container>.list-box{
+    padding: 0 16px;
+}
+.myAccount .myAccount-r>.memberCon>.con-1>.returnlist-container>.hint{
+    padding: 16px;
+}

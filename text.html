@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append()追加</title>
+    <script src="./plugin/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    <ul id="wraper">
+        <li>1</li>
+    </ul>
+    <button id="btn">点击</button>
+</body>
+<script>
+    // $("#btn").click(function() {
+    //     $("#wraper").empty()
+    //     for (let i = 5; i < 10; i++) {
+    //         console.log(i, "iiiii")
+    //         $("#wraper").append("<li>" + i + "</li>")
+    //     }
+    // })
+    $("#btn").click(function() {
+        $("#wraper").empty()
+        for (let i = 10; i > 4; i--) {
+            console.log(i, "iiiii")
+            $("#wraper").prepend("<li>" + i + "</li>")
+        }
+    })
+</script>
+
+</html>

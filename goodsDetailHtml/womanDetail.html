@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>女装|保暖加绒套头连帽衫</title>
+    <!-- icon -->
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <!-- 公共的css -->
+    <link rel="stylesheet" href="../css/swiper.css">
+    <!-- 放大镜exzoom css 1 -->
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link href="../src/jquery.exzoom.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="../plugin/exzoom/jquery.exzoom.css"> -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="../css/goodDetail.css">
+    <!-- 公共的js -->
+    <script src="../plugin/jquery-1.11.3.js"></script>
+    <!-- 放大镜exzoom js  1-->
+    <!-- <script src="../plugin/exzoom/jquery.exzoom.js"></script> -->
+    <script src="../src/jquery.exzoom.js"></script>
+    <script src="../plugin/swiper.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="wraper wrapWidth ">
+        <div class="bannerlink">
+            <span>女装 > 卫衣 >女装|保暖加绒套头连帽衫</span>
+        </div>
+        <div class="goods">
+            <div class="goodsImg">
+                <div class="exzoom" id="exzoom">
+                    <!--大图区域-->
+                    <div class="exzoom_img_box">
+                        <ul class='exzoom_img_ul'>
+                            <li><img src="../img/exzoom1.jpg" alt=""></li>
+                            <li><img src="../img/exzoom2.jpg" alt=""></li>
+                            <li><img src="../img/exzoom3.jpg" alt=""></li>
+                            <li><img src="../img/exzoom4.jpg" alt=""></li>
+                            <li><img src="../img/exzoom5.jpg" alt=""></li>
+                            <li><img src="../img/exzoom1.jpg" alt=""></li>
+                            <li><img src="../img/exzoom2.jpg" alt=""></li>
+                            <li><img src="../img/exzoom3.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+                    <!--缩略图导航-->
+                    <div class="exzoom_nav"></div>
+                    <!--控制按钮-->
+                    <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+                </div>
+                <script type="text/javascript">
+                    $("#exzoom").exzoom({
+                        autoPlay: false,
+                    }); //方法调用，务必在加载完后执行
+                </script>
+            </div>
+            <div class="goodsOption">
+                <div class="title">女装|保暖加绒套头连帽衫</div>
+                <div class="kh">款号：000555545</div>
+                <div class="activity">
+                    <div class="active-bg">
+                        <span>| 活动</span><span>· 全场包邮</span>
+                    </div>
+
+                    <div class="price">
+                        <span>￥199.50</span><span>￥399.00</span>
+                    </div>
+                    <div class="goodsColor">
+                        <span>颜色：</span><span>海军蓝色</span>
+                    </div>
+                    <div class="goodsSmallImg">
+                        <span><img data-v-8670df34="" src="https://uxresources.baozun.com/prod/88000136/20191206/897A5DD69872109ABFB38BA45C165D91.jpg?x-oss-process=image/resize,m_mfit,h_24,w_24/rotate,180/crop,h_24/rotate,180" alt=""></span>
+                        <span><img data-v-8670df34="" src="https://uxresources.baozun.com/prod/88000136/20191206/57A842B2C57CD851E61BBFC3049BA07E.jpg?x-oss-process=image/resize,m_mfit,h_24,w_24/rotate,180/crop,h_24/rotate,180" alt=""></span>
+                    </div>
+                    <div class="goodsSize">
+                        <div class="sizeTitle"><span>尺码：</span> <span>尺码指南</span><span id="chooseSize"></span></div>
+                        <ul class="goodSize-ul">
+                            <li class="sizeLi">160/80A(xxs)</li>
+                            <li class="sizeLi">160/80A(xxs)</li>
+                            <li class="sizeLi">160/80A(xxs)</li>
+                            <li class="sizeLi">160/80A(xxs)</li>
+                            <li class="sizeLi">160/80A(xxs)</li>
+                            <li class="sizeLi">160/80A(xxs)</li>
+                        </ul>
+                    </div>
+                    <div class="numberAdd">
+                        <div class="number">
+                            <span>数量：</span><span id="nums">1</span>
+                        </div>
+                        <div class="addInput">
+                            <button id="reduceNum">-</button>
+                            <input type="text" id="number" value="1" style="text-align: center;">
+                            <button id="addNum">+</button>
+                        </div>
+                    </div>
+
+                    <div class="addButton">
+                        <span>加入购物车</span>
+                        <span>立即购买</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goodSwiper"></div>
+        <div class="goodsBottom"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script>
+    $('#header').load("../common/header.html")
+    $('#footer').load("../common/footer.html")
+        // sizeLi
+    $('.sizeLi').click(function() {
+            // var val = $(this)[0].innerText;
+            $(".sizeLi").removeClass("color")
+            $(this).addClass("color");
+            // $('#chooseSize')[0].innerText = val;
+        })
+        // number
+    var number = 1;
+    // 加
+    $("#addNum").click(function() {
+            number += 1;
+            if (number > 5) {
+                number = 5
+            }
+            // console.log(number)
+            $('#nums')[0].innerText = number;
+            $('#number').val(number)
+
+        })
+        // 减
+    $("#reduceNum").click(function() {
+        number -= 1;
+        if (number < 1) {
+            number = 1
+        }
+        // console.log(number)
+        $('#nums')[0].innerText = number;
+        $('#number').val(number)
+
+    })
+</script>
+
+</html>

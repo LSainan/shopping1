@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的账户</title>
+    <link rel="icon"
+        href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png" ">
+    <link rel=" stylesheet " href=" ../css/common.css ">
+    <link rel=" stylesheet" href="../css/myAccount.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1633992_j5s9g22wfs9.css">
+    <script src="../plugin/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="bigB-c">
+        <div class="myAccount wrapWidth">
+            <div class="myAccount-l">
+                <div class="memberOrder">
+                    <h4 class="title"><i class="iconfont icon-user"></i><span>会员中心</span></h4>
+                    <ul class="member">
+                        <li class="on active">我的账户</li>
+                        <li>个人信息</li>
+                        <li>地址簿</li>
+                        <li>积分</li>
+                        <li>优惠券</li>
+                        <h4 class="title"><i class="iconfont icon-wodedingdan"></i><span>订单信息</span></h4>
+                        <li>我的订单</li>
+                        <li>我的退换货</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="myAccount-r">
+                <!-- jq -->
+                <div class="memberCon">
+                    <!-- 我的账户 -->
+                    <div class="con-1 active">
+                        <div class="title">
+                            我的账户
+                        </div>
+                        <div class="Ac-wrap">
+                            <div class="info-container">
+                                <div class="welcome-info">
+                                    <div class="userinfo">您好，155****5827
+                                        <span>退出登录</span></div>
+                                    <div class="slogan">欢迎光临Gap中国官网！</div>
+                                </div>
+                                <div class="card-wrap">
+                                    <!-- 双面card -->
+                                    <div class="flipper">
+                                        <!-- 1正面 -->
+                                        <div class="face front">
+                                            <div class="wrap front-wrap">
+                                                <div class="backface">
+                                                    <div class="img">
+                                                        <!-- 自动生成card -->
+                                                        <img
+                                                            src="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.14-1/static/gap-vip1@2x.7c5df525945bc32b474ce2fd76497981.png">
+                                                    </div>
+                                                    <p class="signal">
+                                                        155****5827 IS VIP BLUE
+                                                    </p>
+                                                    <p class="serial none-sm">查看二维码</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 2反面 -->
+                                        <div class="face back">
+                                            <div class="wrap back-wrap">
+                                                <!-- <div class="backface float-clearfix"> -->
+                                                <p class="signal none-sm">
+                                                    155****5827 IS VIP BLUE
+                                                </p>
+                                                <div class="memberId"><img src="../img/li.png" alt=""
+                                                        style="width:100px;height: 100px;"></div>
+                                                <div class="number">
+                                                    序列号：1120021800006969
+                                                </div>
+                                                <p class="serial">查看会员卡</p>
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <div class="hello none-sm">尊敬的蓝卡会员</div>
+                                    <p class="benefit">感谢成为我们的蓝卡会员，您可点击查看<span data-v-1cc78c74="">会员权益</span></p>
+                                    <div class="degree">
+                                        <div class="progress">
+                                            <div class="progress-bar">
+                                                <p style="width: 0%;"></p>
+                                            </div>
+                                            <span class="check-point"><svg class="icon" aria-hidden="true">
+                                                    <use xlink:href="#icon-Tick"></use>
+                                                </svg></i></span>
+                                            <!---->
+                                        </div>
+                                        <div class="upgrade">
+                                            <div class="grade">蓝卡会员</div>
+                                            <div class="grade-next">
+                                                您再消费 <span class="price">￥1,200.00</span> 可升级
+                                                <span class="next-level">银卡会员</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li>
+                                        <div class="iconbox"><a href="/account/profile" class=""><svg data-v-24654c54=""
+                                                    aria-hidden="true" class="icon">
+                                                    <use data-v-24654c54="" xlink:href="#icon-icon_info"></use>
+                                                </svg></a></div>
+                                        <div class="infobox">
+                                            <p class="name">个人信息</p>
+                                            <p class="info">
+                                                155****5827
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iconbox"><a href="/account/address" class=""><svg data-v-24654c54=""
+                                                    aria-hidden="true" class="icon">
+                                                    <use data-v-24654c54="" xlink:href="#icon-icon_address"></use>
+                                                </svg></a></div>
+                                        <div class="infobox">
+                                            <p class="name">地址簿</p>
+                                            <p class="info">
+                                                3个
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iconbox"><a href="/account/point" class=""><svg data-v-24654c54=""
+                                                    aria-hidden="true" class="icon" style="font-size: 45px;">
+                                                    <use data-v-24654c54="" xlink:href="#icon-pay_icon_points"></use>
+                                                </svg></a></div>
+                                        <div class="infobox">
+                                            <p class="name">积分</p>
+                                            <p class="info">
+                                                0分
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iconbox"><a href="/account/coupon" class=""><svg class="icon"
+                                                    aria-hidden="true">
+                                                    <use xlink:href="#icon-icon_coupon"></use>
+                                                </svg>
+                                                </svg></a></div>
+                                        <div class="infobox">
+                                            <p class="name">优惠券</p>
+                                            <p class="info">1张</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>.
+                        </div>
+                    </div>
+                    <!-- 个人信息 -->
+                    <div class="con-1">
+                        <div class="title">
+                            个人信息
+                        </div>
+
+                    </div>
+                    <!--  地址簿 -->
+                    <div class="con-1">
+                        <div class="title">
+                            地址簿
+                        </div>
+                        <table cellspacing='0' cellpadding='0'>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>收件人</th>
+                                    <th>地址</th>
+                                    <th>手机号</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-c">
+                                    <td><input type="radio" name="default"><span>默认地址</span></td>
+                                    <td>欢悦</td>
+                                    <td>
+                                        <p>北京北京市朝阳区1234567</p>
+                                    </td>
+                                    <td>15538325827</td>
+                                    <td><span><i
+                                                class="iconfont icon-neirongshurutubiao"></i></span><span>编辑</span><span><i
+                                                class="iconfont icon-shanchu"></i></span><span>删除</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="default"><span>默认地址</span></td>
+                                    <td>欢悦</td>
+                                    <td>
+                                        <p>河南省商丘市柘城县邵园乡株洲路中原无人机产业园</p>
+                                    </td>
+                                    <td>15538325827</td>
+                                    <td><span><i
+                                                class="iconfont icon-neirongshurutubiao"></i></span><span>编辑</span><span><i
+                                                class="iconfont icon-shanchu"></i></span><span>删除</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-box"><button><span>新增收货地址</span></button></div>
+                    </div>
+                    <!-- 积分 -->
+                    <div class="con-1">
+                        <div class="title">
+                            积分
+                        </div>
+                        <div class="title">
+                            积分<a href=" " class="">查看积分规则</a>
+                        </div>
+                        <div class="point-container">
+                            <div class="point-all">
+                                <span class="point-now">当前可用积分
+                                    <b>0</b>
+                                </span>
+                                <span class="point-gone">本月底即将过期0积分</span><span class="point-get">如何获得积分？</span>
+                            </div>
+                            <div class="point-info">* 您可重新登录账号，查看最新积分</div>
+                            <div class="point-tab"><span class="">全部记录</span><span class="">获取记录</span><span
+                                    class="isActive">使用记录</span></div>
+                            <div class="no-point">暂无积分记录</div>
+                        </div>
+                        <!-- 弹出框 -->
+                        <div class="point-dialog-wrapper">
+                            <div class="el-dialog__wrapper" style="display: none;">
+                                <div role="dialog" aria-modal="true" aria-label="dialog"
+                                    class="el-dialog gap-dialog point-dialog" style="margin-top: 20px;">
+                                    <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                                        <!---->
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 优惠券 -->
+                    <div class="con-1">
+                        <div class="title">
+                            优惠券
+                        </div>
+                        <div class="coupon-container">
+                            <div class="table-box">
+                                <div class="tab-item isActive">
+                                    官网优惠券
+                                    <span>（1张）</span></div>
+                                <div class="tab-item">
+                                    门店官网通用优惠券
+                                    <span>（0张）</span></div>
+                            </div>
+                            <div class="use-box">
+                                <div class="use-item use-item-left isActive"><span>可使用</span></div>
+                                <div class="use-item use-item-right"><span>已使用</span></div>
+                                <a href=" " class="use-rule">优惠券使用规则</a>
+                            </div>
+                            <!-- 已使用 无 -->
+                            <div class="counpon-none">暂无优惠券</div>
+                            <!---->
+                            <div class="coupon-box">
+                                <div class="coupon">
+                                    <div class="coupon-item coupon-cash">
+                                        <div class="coupon-top">
+                                            <div class="price"><span>￥</span><span class="price-num">10</span></div>
+                                            <p class="name">新会员欢迎礼券</p>
+                                            <p class="dateline">有效期：2020.02.18 - 2020.03.03</p>
+                                            <div class="type">
+                                                满减券
+                                            </div>
+                                            <span class="isUsed">已使用</span>
+                                        </div>
+                                        <div class="coupon-btm">
+                                            <p><span>优惠说明：</span>满11.00减10.00</p>
+                                            <p><span>可使用次数：</span>1次（已使用0次）</p>
+                                            <span class="detail-btn" id="detail-btn">优惠券详情</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="con-1"></div>
+                    <!-- 我的订单 -->
+                    <div class="con-1">
+                        <div class="title">
+                            我的订单
+                        </div>
+                    </div>
+                    <!-- 我的退换货 -->
+                    <div class="con-1">
+                        <div class="title">
+                            我的退换货
+                        </div>
+                        <div class="returnlist-container">
+                            <div class="table-box"><span class="isActive">退货订单</span><span class="">换货订单</span></div>
+                            <div class="use-box">
+                                <div class="use-item use-item-left isActive"><span class="b-c">处理中</span></div>
+                                <div class="use-item use-item-right"><span>已完成</span>
+                                </div>
+                            </div>
+                            <div class="list-box"></div>
+                            <p class="hint">您的账户还没有记录</p>
+                            <div class="load-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- 优惠券弹出框 -->
+    <div class="coupon-dialog-wrapper">
+        <div class="dialog">
+            <div class="dialog-title">优惠券详情</div>
+            <span class="close">X</span>
+            <div class="detail-item"><span>优惠说明</span><span>满11.00减10.00</span></div>
+            <div class="detail-item"><span>有效日期</span><span>2020.02.18 - 2020.03.03</span></div>
+            <div class="detail-item">
+                <span class="useInfo">使用须知</span>
+                <p>
+                    1.凭此优惠券于中国官网Gap.cn（包括Gap盖璞在线商城小程序）购物及双倍积分累计优惠，享整单10元抵扣优惠。该优惠券不适用于门店购物使用。（官网结算时请输入优惠代码。视具体活动规则可能需要预先注册或登录方能享受优惠）
+                    2.此优惠券不可与店内促销同享，不可与其他会员优惠券同享。
+                    3.此优惠券不适用于购买减价商品（以同期店内活动为准，届时请详询店员）。
+                    4.使用礼品卡金额结算的部分不享受会员积分。
+                    5.此优惠券不适用于购买礼品卡。
+                    6.注意事项：
+                    优惠券需在有效期限内使用；
+                    除免运费优惠券，其余优惠券仅限于商品金额抵扣，不能用来抵扣运费等其他费用，也不可兑现或找零；优惠券使用后如需退货，抵用部分不予退款。
+                    使用优惠券需满足最低使用金额，没有金额限制的优惠券需大于等于优惠券金额方可使用；
+                    使用优惠券需满足使用次数限制，无特殊说明，均只能使用一次；
+                    因个人原因取消订单或未完成订单，导致优惠券无法恢复，不再补发优惠券；
+                    针对超过总数25件商品的订单或单品购买超过5件的批量采购订单，请详询店员；
+                    订单中使用优惠券抵扣金额部分，不享有积分；
+                    由于帐户盗用等非常规原因或用户自身原因造成不能使用优惠券的，与Gap Inc.无关；
+                    对于任何通过不正当或非正常手段参与者，Gap Inc.有权取消其兑换资格。
+                    Gap Inc.有权随时调整、更新、修改本规则。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 字体图标加颜色 -->
+<script src="http://at.alicdn.com/t/font_1633992_hstmqjtch6a.js"></script>
+<style type="text/css">
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+</style>
+<script>
+    $('#header').load("../common/header.html")
+    $('#footer').load("../common/footer.html")
+    //=================================================== jq选项卡
+    // 会员中心
+    $(function () {
+        $(".memberOrder .member li").click(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+            let index = $(this).index();
+            $(".memberCon .con-1").eq(index).addClass("active").siblings().removeClass("active")
+        })
+    })
+    //================================== 旋转
+    var state = true;
+    $(".serial").click(function () {
+        if (state) {
+            $(".flipper").addClass('flip');
+            state = false
+        }
+        else {
+            $(".flipper").removeClass('flip');
+            state = true
+        }
+    })
+    // =============================优惠券
+    $(".tab-item").click(function () {
+        $(".tab-item").removeClass("isActive")
+        $(this).addClass("isActive")
+    })
+    // 有无使用
+    $(".use-item").click(function(){
+
+    })
+    // 优惠券详情
+    $("#detail-btn").click(function(){
+        $(".coupon-dialog-wrapper").show()
+    })
+    // 关闭优惠券弹出框
+    $(".close").click(function () {
+        $(" .coupon-dialog-wrapper").hide()
+    })
+    // ======================================我要退换货
+    $(".table-box span").click(function () {
+        $(this).addClass("isActive").siblings().removeClass("isActive")
+
+    })
+    $(".use-item  span").click(function () {
+        $(".use-item span").removeClass("b-c")
+        $(this).addClass("b-c")
+    })
+
+</script>
+
+</html>

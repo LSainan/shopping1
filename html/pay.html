@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付</title>
+    <link rel="icon"
+        href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png" ">
+    <link rel=" stylesheet " href=" ../css/common.css ">
+    <link rel=" stylesheet" href="../css/pay.css">
+    <link rel="stylesheet " href="http://at.alicdn.com/t/font_1633992_f7pmqred0ib.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="payWrap wrapWidth">
+        <!--  -->
+        <div class="payment">
+            <div class="pay-title">
+                <h3>请及时付款，以便订单尽快处理</h3>
+                <p>下单后8小时内未付款，订单将自动取消，请尽快完成支付。</p>
+            </div>
+            <div class="paly-wm">
+                <div class="erwm">
+                    <i class="iconfont icon-weima"></i>
+                    <p data-v-62ed58c3="">应付金额：¥ 986.00</p>
+                </div>
+                <div class="alipay">
+                    <p>请使用手机支付宝，扫描二维码进行支付。</p>
+                    <p>或者您也可以：</p>
+                    <p>前往 <a href="">支付宝网站</a>付款或<a href="">选择其他支付方式</a></p>
+                </div>
+            </div>
+
+        </div>
+        <!--  -->
+        <div class="order-info">
+            <ul>
+                <li class="fettle"><span>订单状态</span><span>等待付款</span></li>
+                <li><span>订单号:</span><span>120021817343318160</span></li>
+                <li><span>配送地址:</span><span>高兴 15538325827 河南省商丘市柘城县邵园乡株洲路中原无人机产业园</span></li>
+                <li><span>支付方式:</span><span>支付宝</span></li>
+                <li><span>订单总额:</span><span>￥986.00</span></li>
+
+            </ul>
+        </div>
+        <!--  -->
+        <div class="order-product">
+            <div id="shopMessage"></div>
+        </div>
+        <ul class="shop-count">
+            <li><span >商品总额</span><span>￥986.00</span></li>
+            <li><span><span>优惠</span><i class="iconfont icon-question"></i></span><span>-￥0.00</span></li>
+            <li><span >运费</span><span>￥0.00</span></li>
+            <li><span>订单总额</span><span>￥986.00</span></li>
+        </ul>
+    </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="../plugin/jquery-1.11.3.js"></script>
+    <script>
+        $("#header").load("../common/header.html")
+        $("#footer").load("../common/footer.html")
+        $("#shopMessage").load("../common/shopMessage.html")
+    </script>
+</body>
+
+</html>

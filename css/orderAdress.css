@@ -1,0 +1,32 @@
+.orderAdress> ul{
+    /* background-color: pink; */
+    width: 380px;
+    margin-bottom: 24px;
+    border: 1px solid #999;
+    display: inline-block;
+    margin-right: 8px;
+}
+.orderAdress .d-bor-c{
+    border-color: #122147 !important;
+}
+.orderAdress>ul>li{
+    padding: 13px;
+    margin: 0 10px;
+}
+.orderAdress>.Addr-item>.item>p>.default-mark{
+   color: #122147;
+}
+.orderAdress> ul>li:nth-child(1){
+    border-bottom: 1px dashed #999;
+}
+.orderAdress>.Addr-item>li>.icon-re{
+    position: relative;
+    /* background-color: pink; */
+}
+.orderAdress>.Addr-item>li>.default-icon{
+    color: #122147;
+    font-size: 18px;
+    position: absolute;
+    bottom: -19px;
+    left: 421px;
+}

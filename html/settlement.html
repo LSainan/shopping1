@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算</title>
+    <link rel="icon"
+        href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png" ">
+    <link rel=" stylesheet " href=" ../css/common.css ">
+    <link rel=" stylesheet " href=" ../css/myShoppingCart.css ">
+    <link rel=" stylesheet" href="../css/settlement.css">
+    <link rel="stylesheet " href="http://at.alicdn.com/t/font_1633992_zb10h5womel.css ">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="cartContent wrapWidth ">
+        <!-- 结算页面 -->
+        <div class="settlement">
+            <!-- 配送信息 -->
+            <div class="set-message">
+                配送信息
+            </div>
+            <div class="emptyAddress">
+                <div class="add-address">
+                    <form action="" class="form">
+                        <div class="addressee">
+                            <div class="sendee">
+                                <p>收件人</p>
+                                <input type="text" placeholder="请输入姓名">
+                            </div>
+                            <div class="add-phone">
+                                <p>手机号</p>
+                                <input type="text" placeholder="请输入手机号码">
+                            </div>
+                        </div>
+                        <div class="add-adress-three">
+                            <!-- 1 -->
+                            <div class="country">
+                                <p class="title">省</p>
+                                <select name="" id="country" onchange="countryFun()">
+                                    <option value="">请选择省</option>
+                                </select>
+                            </div>
+                            <!-- 2 -->
+                            <div class="city">
+                                <p class="title">市</p>
+                                <select name="" id="city" onchange="cityFUn()">
+                                    <option value="">请选择市</option>
+                                </select>
+                            </div>
+                            <!-- 3 -->
+                            <div class="area">
+                                <p class="title">区</p>
+                                <select name="" id="area" onchange="">
+                                    <option value="">请选择区/县</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="address-detail">
+                            <p>详细地址</p>
+                            <div class="de-textarea">
+                                <textarea autocomplete="off" placeholder="请输入详细地址" class="el-textarea__inner"
+                                    style="min-height: 50px;"></textarea>
+                            </div>
+                            <p class="de-d">请输入详细地址</p>
+                        </div>
+                    </form>
+                    <div class="set-way">
+                        <div class="w-way">配送方式</div>
+                        <div class="w-type">
+                            <span>快递</span>
+                            <span>免运费</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品信息 -->
+            <div class="set-shopMes">
+                <p class="set-title">商品信息</p>
+                <div class="shop-mes">
+                    <!-- ul 1 -->
+                    <ul class="mes">
+                        <!-- 1 -->
+                        <li class="list-img ">
+                            <a href="https://www.gap.cn/pdp/000529484/1_000529484_H105-11304 " target="_blank ">
+                                <img
+                                    src="https://uxresources.baozun.com/prod/88000136/20190925/955F78F44EFBB38A29CDC5BE2B40A563.jpg ">
+                            </a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="list-info">
+                            <p class="title ">Gap</p>
+                            <p>男装|圆领长袖套头卫衣</p>
+                            <p class="specifications ">
+                                <span>175/92A(S)、</span>
+                                <span>海军篮</span>
+                            </p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="list-price">
+                            <span>￥174.50</span>
+                            <span class="p-count">x1</span>
+                        </li>
+                        <!-- 4 -->
+                        <li class="total ">
+                            <span class="mobile-total-t ">小计:</span>￥174.50
+                        </li>
+                    </ul>
+                    <!-- ul 2 -->
+                    <ul class="mes">
+                        <!-- 1 -->
+                        <li class="list-img ">
+                            <a href="https://www.gap.cn/pdp/000529484/1_000529484_H105-11304 " target="_blank ">
+                                <img
+                                    src="https://uxresources.baozun.com/prod/88000136/20190925/955F78F44EFBB38A29CDC5BE2B40A563.jpg ">
+                            </a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="list-info">
+                            <p class="title ">Gap</p>
+                            <p>男装|圆领长袖套头卫衣</p>
+                            <p class="specifications ">
+                                <span>175/92A(S)、</span>
+                                <span>海军篮</span>
+                            </p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="list-price">
+                            <span>￥174.50</span>
+                            <span class="p-count">x1</span>
+                        </li>
+                        <!-- 4 -->
+                        <li class="total ">
+                            <span class="mobile-total-t ">小计:</span>￥174.50
+                        </li>
+                    </ul>
+                    <!-- ul 3 -->
+                    <ul class="mes">
+                        <!-- 1 -->
+                        <li class="list-img ">
+                            <a href="https://www.gap.cn/pdp/000529484/1_000529484_H105-11304 " target="_blank ">
+                                <img
+                                    src="https://uxresources.baozun.com/prod/88000136/20190925/955F78F44EFBB38A29CDC5BE2B40A563.jpg ">
+                            </a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="list-info">
+                            <p class="title ">Gap</p>
+                            <p>男装|圆领长袖套头卫衣</p>
+                            <p class="specifications ">
+                                <span>175/92A(S)、</span>
+                                <span>海军篮</span>
+                            </p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="list-price">
+                            <span>￥174.50</span>
+                            <span class="p-count">x1</span>
+                        </li>
+                        <!-- 4 -->
+                        <li class="total ">
+                            <span class="mobile-total-t ">小计:</span>￥174.50
+                        </li>
+                    </ul>
+                    <!-- ul 4 -->
+                    <ul class="mes">
+                        <!-- 1 -->
+                        <li class="list-img ">
+                            <a href="https://www.gap.cn/pdp/000529484/1_000529484_H105-11304 " target="_blank ">
+                                <img
+                                    src="https://uxresources.baozun.com/prod/88000136/20190925/955F78F44EFBB38A29CDC5BE2B40A563.jpg ">
+                            </a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="list-info">
+                            <p class="title ">Gap</p>
+                            <p>男装|圆领长袖套头卫衣</p>
+                            <p class="specifications ">
+                                <span>175/92A(S)、</span>
+                                <span>海军篮</span>
+                            </p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="list-price">
+                            <span>￥174.50</span>
+                            <span class="p-count">x1</span>
+                        </li>
+                        <!-- 4 -->
+                        <li class="total ">
+                            <span class="mobile-total-t ">小计:</span>￥174.50
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 支付信息 -->
+            <div class="set-payMes">
+                <p class="set-title">支付信息</p>
+                <div class="pay-way">
+                    <!-- 支付宝支付 -->
+                    <div class="way">
+                        <input type="radio" name="" id="">
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay "></use>
+                            </svg>
+                        </span>
+                        <span class="m-r ">支付宝支付</span>
+                    </div>
+                    <!-- 微信支付 -->
+                    <div class="way">
+                        <input type="radio">
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay1 "></use>
+                            </svg></span>
+                        <span class="m-r ">微信支付</span>
+                    </div>
+                    <!-- Gap礼品卡支付 -->
+                    <div class="way">
+                        <input type="radio">
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay2 "></use>
+                            </svg></span>
+                        <span>Gap礼品卡支付</span>
+                    </div>
+                    <!-- OLd Navy礼品卡支付 -->
+                    <div class="way">
+                        <input type="radio" name="" id="">
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay2 "></use>
+                            </svg></span>
+                        <span>OLd Navy礼品卡支付</span><br>
+                        <span class="color">查看礼品卡说明</span>
+                        <span class="color">查询余额</span>
+                    </div>
+                </div>
+
+                <div class="receipt">
+                    <i class="iconfont icon-invoice"></i>
+                    <span>发票说明</span>
+
+                </div>
+            </div>
+            <!-- 提交订单按钮 -->
+            <button>提交订单</button>
+        </div>
+        <div class="cartRight ">
+            <!-- 订单摘要 -->
+            <div class="cart-settlement ">
+                <div class="set-title ">
+                    <span>订单摘要</span>
+                    <span class="count ">已选0件商品</span>
+                </div>
+                <div class="cart-good ">
+                    <div class="good-amount ">
+                        <span>商品总额</span><span class="amount ">￥0.00</span>
+                    </div>
+                    <div class="concession ">
+                        <span>优惠</span> <i class="iconfont icon-question "></i>
+                        <span>￥0.00</span>
+                    </div>
+                </div>
+                <div class="border-bottom ">
+                    <div class="cart-arrow ">
+                        <input type="text " placeholder="请输入优惠码 ">
+                        <input type="text " placeholder="使用 ">
+                    </div>
+                    <p>立即 <span>登录</span>使用优惠券/码和抵扣积分并累计积分</p>
+                    <p>不是会员？ 立即<span class="link ">注册</span>获取欢迎礼券，享会员权益</p>
+                </div>
+                <div class="total-sum ">
+                    <div class="sum ">
+                        <span>订单总金额</span>
+                        <span>￥0.00</span>
+                    </div>
+                    <div class="btn-largr "><button>立即结算</button></div>
+                    <div class="btn-goBuy "><button>继续购物</button></div>
+                </div>
+            </div>
+            <!-- 订单摘要 -->
+            <div class="cart-help ">
+                <div class="border-b ">
+                    <div class="help ">
+                        <span>需要帮助？</span>
+                        <span>+</span>
+                        <span>-</span>
+                    </div>
+                    <div class="online ">
+                        <span><i class="iconfont icon-customer-service "></i></span>
+                        <span>在线客服</span>
+                        <span>(服务时间:10:00-22:00)</span>
+                    </div>
+                    <div class="phone ">
+                        <p>售后服务热线</p>
+                        <p>400-680-8517<span>(服务时间:10:00-19:00)</span></p>
+                    </div>
+                </div>
+                <div class="payUse ">
+                    <div class="title ">
+                        <span>支付方式</span>
+                        <span>+</span>
+                        <span>-</span>
+                    </div>
+                    <div class="help-pay ">
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay "></use>
+                            </svg></span>
+                        <span class="m-r ">支付宝</span>
+                        <!-- weixin -->
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay1 "></use>
+                            </svg></span>
+                        <span class="m-r ">微信</span>
+                        <!-- 礼品卡 -->
+                        <span><svg style="width: 20px;height:20px; vertical-align:middle; " class="icon "
+                                aria-hidden="true ">
+                                <use xlink:href="#icon-pay2 "></use>
+                            </svg></span>
+                        <span>礼品卡</span>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="cart-change ">
+                    <div class="chang ">
+                        <span>退换政策</span>
+                        <span>+</span>
+                        <span>-</span>
+                    </div>
+                    <div class="chang-p ">
+                        <p>我们提供完善的售后服务，承诺自顾客签收商品之日（以签收快递日期为准）起15天内（减价商品和正价商品)，
+                            如对商品有任何不满意，我们将提供无理由退换货服务。以初上市吊牌价销售的商品退换货费用全免
+                            （不包括参与限时促销的正价商品和减价商品）。<span>更多详情</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='footer'></div>
+</body>
+<script src="../plugin/jquery-1.11.3.js "></script>
+<script src="../js/country.js"></script>
+<script>
+    $("#header ").load("../common/header.html")
+    $("#footer ").load("../common/footer.html")
+    // 三级联动
+    // 第一步，省
+    var html = '';
+    for (let i = 0; i < country.length; i++) {
+        html += `<option value=''>` + country[i].name + `</option>`
+    }
+    $("#country").append(html)
+    // 第二步，获取省对应的市
+    function countryFun() {
+        // 省份下标
+        let index = $('#country').children('option:selected').index() - 1
+        // 除了第一个，其余移除
+        $('#city').children().not(':eq(0)').remove()
+        let city = '';
+        // for 循环拼接市
+        for (let i = 0; i < country[index].city.length; i++) {
+            city += `<option value=''>` + country[index].city[i].name + `</option>`
+        }
+        // console.log(city)
+        // 把获取省份对应的市追加
+        $('#city').append(city)
+    }
+    // 第三步 获取市对应的区县
+    function cityFUn() {
+        // 省下标
+        let index1 = $('#country').children('option:selected').index() - 1
+        // 市下标
+        let index2 = $('#city').children('option:selected').index() - 1
+        // console.log(city)
+        // let len = country[index1].city[index2].area.length;
+        // 除了第一个，其余移除
+        $('#area').children().not(':eq(0)').remove()
+        let area = '';
+        // for 循环拼接
+        for (let i = 0; i < country[index1].city[index2].area.length; i++) {
+            area += `<option value=''>` + country[index1].city[index2].area[i] + `</option>`
+        }
+        // 把获取市对应的区县追加
+        $('#area').append(area)
+    }
+</script>
+</script>
+<!-- 字体图标加颜色 -->
+<script src="http://at.alicdn.com/t/font_1633992_fg2eflapufi.js "></script>
+<style type="text/css ">
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+</style>
+
+</html>

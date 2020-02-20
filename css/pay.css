@@ -1,0 +1,105 @@
+.payWrap{
+padding: 72px 0 139px;
+overflow: hidden;
+}
+.payWrap>.payment>.pay-title{
+    text-align: center;
+    line-height: 2;
+}
+.payWrap>.payment>.paly-wm{
+    max-width: 510px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    overflow: hidden;
+
+}
+.payWrap>.payment>.paly-wm>.erwm{
+    float: left;
+}
+.payWrap>.payment>.paly-wm>.erwm>i{
+font-size: 200px;
+}
+.payWrap>.payment>.paly-wm>.erwm>p{
+    font-size: 14px;
+    padding-left: 40px;
+}
+.payWrap>.payment>.paly-wm>.alipay{
+float: left;
+margin-left: 40px;
+}
+.payWrap>.payment>.paly-wm>.alipay>p:nth-child(1){
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+.payWrap>.payment>.paly-wm>.alipay>p:nth-child(3){
+   padding-top: 10px;
+}
+.payWrap>.payment>.paly-wm>.alipay>p:nth-child(3)>a{
+    color: #000;
+ }
+ .payWrap>.payment>.paly-wm>.alipay>p:nth-child(3)>a:hover{
+    color:red;
+ }
+/*  */
+.payWrap>.order-info{
+    background-color: #f5f5f5;
+    padding: 16px;
+    width: 980px;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+}
+.payWrap>.order-info>ul{
+    line-height: 2;
+}
+.payWrap>.order-info>ul>li>span:nth-child(1){
+    padding-right: 10px;
+}
+.payWrap>.order-info>ul>.fettle{
+    /* overflow: hidden; */
+}
+.payWrap>.order-info>ul>.fettle>span:nth-child(1){display: none;}
+.payWrap>.order-info>ul>.fettle>span:nth-child(2){
+    float: right;
+    /* margin-top:20px; */
+    }
+    /*  */
+    .payWrap>.order-product{
+        width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+border-bottom: 1px solid #999;
+    }
+    /*  */
+    .payWrap>.shop-count{
+        margin-top: 20px;
+        float: right;
+        margin-right: 100px;
+    }
+    .payWrap>.shop-count>li{
+        line-height: 2;
+        overflow: hidden;
+    }
+    .payWrap>.shop-count>li>span:nth-child(1){
+       float: left;
+       margin-right: 100px;
+    }
+    .payWrap>.shop-count>li>span:nth-child(2){
+        float: right;;
+
+     }
+     .payWrap>.shop-count>li:nth-child(3){
+        border-bottom: 1px solid #999;
+     }
+     .payWrap>.shop-count>li:nth-child(2){
+       color: #b1200a;
+     }
+     .payWrap>.shop-count>li:nth-child(2)>span>i{
+        font-size: 12px;
+        color: #999;
+        padding-left: 4px;
+     }
+    .payWrap>.shop-count>li:nth-child(4){
+padding-top: 5px;
+        }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tab {
+        width: 750px;
+        border: 1px outset black;
+        border-radius: 5px;
+    }
+
+    ul>li {
+        float: left;
+        list-style: none;
+        padding: 5px 7px;
+        margin-top: 8px;
+        margin-left: 5px;
+        border-radius: 5px;
+        color: #1c8cbe;
+    }
+
+    .btn {
+        background: white;
+        color: #de8915;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .ys {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 740px;
+        height: 40px;
+        background: #f7be5e;
+        border-radius: 5px;
+        border-bottom: 1px outset #e5910a;
+    }
+
+    .con {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .con-1 {
+        font-size: 13px;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="tab">
+        <ul class="clearfix ys">
+            <li class="btn"> First </li>
+            <li> Second </li>
+            <li> Third </li>
+        </ul>
+        <div class="con">
+            <div class="con-1 active">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do siusmod tenpor incididunt ut labore et
+                dolore
+                <br> magna aliqua.Ut enim ad monim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo
+                <br> consequat. </div>
+            <div class="con-1">
+                第二页 </div>
+            <div class="con-1">
+                第三页 </div>
+        </div>
+    </div>
+</body>
+<script src="./plugin/jquery-1.11.3.js"></script>
+<script>
+    $(".tab ul li").click(function () {
+        $(this).addClass("btn")
+            .siblings()
+            .removeClass("btn");
+
+        var index = $(this).index();
+        $(".con .con-1").eq(index)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+    });
+</script>
+</html>

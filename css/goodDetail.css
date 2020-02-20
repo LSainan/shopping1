@@ -1,0 +1,206 @@
+        #exzoom {
+            width: 400px;
+            margin: 20px auto;
+        }
+        
+        .color {
+            color: #042f6a;
+            border-color: #042f6a;
+        }
+        /* swiper */
+        
+        .wraper>.goodSwiper>.seperLike {
+            text-align: center;
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 24px;
+            padding-bottom: 24px;
+        }
+        
+        .wraper>.bannerlink>span {
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .wraper>.goods {
+            overflow: hidden;
+        }
+        
+        .wraper>.goods>.goodsImg {
+            width: 580px;
+            height: 500px;
+            /* background-color: pink; */
+            float: left;
+            /* margin-right: 22px; */
+        }
+        
+        .wraper>.goods>.goodsOption {
+            float: left;
+        }
+        
+        .wraper>.goods>.goodsOption>.title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .wraper>.goods>.goodsOption>.kh {
+            color: #999;
+            margin-bottom: 24px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.active-bg {
+            background-color: #f9f9f9;
+            padding: 6px 12px 6px 49px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.active-bg>span:nth-child(1) {
+            font-size: 12px;
+            color: #be200a;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.active-bg>span:nth-child(2) {
+            font-size: 12px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.price>span:nth-child(1) {
+            font-size: 24px;
+            color: #be200a;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.price>span:nth-child(2) {
+            margin-left: 6px;
+            color: #999;
+            text-decoration: line-through;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsColor {
+            padding-top: 16px;
+            padding-bottom: 15px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsColor>span {
+            margin-bottom: 12px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsColor>span:nth-child(1) {
+            color: #999;
+            margin-right: 10px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsColor>span:nth-child(2) {
+            font-weight: 600;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSmallImg>span {
+            width: 20px;
+            height: 20px;
+            margin: 15px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSmallImg>span:nth-child(1) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSmallImg>span:nth-child(1)>img {
+            border: 1px solid #000;
+            padding: 2px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSmallImg>span:nth-child(2)>img:hover {
+            border: 1px solid #000;
+            padding: 2px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize {
+            color: #999;
+            padding-top: 16px;
+            padding-bottom: 10px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.sizeTitle {
+            margin-bottom: 8px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.sizeTitle>span:nth-child(2) {
+            float: right;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.goodSize-ul {
+            /* display: inline-block; */
+            width: 600px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.goodSize-ul>li {
+            border: 1px solid #999;
+            padding: 5px 40px;
+            display: inline-block;
+            margin-bottom: 14px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.goodSize-ul>li:hover {
+            color: #042f6a;
+            border: 1px solid #042f6a;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.goodSize-ul>li:nth-child(3) {
+            margin-right: 0px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.goodsSize>.goodSize-ul>li:nth-child(6) {
+            margin-right: 0px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.numberAdd {
+            color: #999;
+            padding-bottom: 40px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.numberAdd>.number {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.numberAdd>.number>#nums {
+            color: #000;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.addButton>span {
+            border: 1px solid #122147;
+            cursor: pointer;
+            display: inline-block;
+            width: 282px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .wraper>.goods>.goodsOption>.activity>.addButton>span:nth-child(2) {
+            color: #fff;
+            background-color: #122147;
+        }
+        /* infomation */
+        
+        .wraper>.infomation {
+            max-width: 750px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+        
+        .wraper>.infomation>.info-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 24px;
+            padding-top: 20px;
+        }
